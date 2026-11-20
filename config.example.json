@@ -1,0 +1,16 @@
+{
+  "scripts_dir": "~/.pippin/scripts",
+  "mcpServers": {
+    "clipboard": {
+      "command": "python3",
+      "args": ["$PIPPIN_ROOT/mcp/clipboard_server.py"],
+      "triggers": ["буфер", "clipboard", "скопир", "copy", "paste", "вставь"]
+    },
+    "time": {
+      "command": "uvx",
+      "args": ["mcp-server-time"],
+      "tools": ["get_current_time"],
+      "disabled": true
+    }
+  }
+}
